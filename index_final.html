@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <Title>Jump into Javascript</Title>
+	<meta charset="utf-8">
+	
+	<!-- Lesson 1: adding JavaScript -->
+	<script type='text/javascript'>
+		function execute(){
+			for(i=0; i<2; i++){
+				alert(i);
+			}
+		}
+	</script>
+	
+  <!-- Lesson 7 Add jQuery library-->
+  <script src="http://code.jquery.com/jquery-1.11.3.js" type='text/javascript'></script>
+  <script src="http://code.jquery.com/ui/1.11.4/jquery-ui.js" type='text/javascript'></script>
+  <link rel="http://code.jquery.com/ui/1.11.4/themes/blitzer/jquery-ui.css"/>
+  
+  <!-- Lesson 4: add the link to the external script file -->
+	<script src='demo_final.js' type='text/javascript'></script>
+	
+  </head>
+  <body id="body">
+	<h1 id="demo">Intro to Javascript</h1>
+	
+	<script>
+		//Lesson 2: create and call a function, make the code above into a function
+		//execute();
+	</script>
+	
+	<!-- Lesson 3 is to create a button and have an onclick event hander-->
+	<input type="button" onclick='execute()' value="Alerts" />
+	
+  <!-- Lesson 4: create external file and call a function -->
+	<input type="button" onclick='changeH1()' value="Change Content" />
+	<br/>
+	<br/>
+	<!-- Lesson 5: is to create an input text box and getting data from it -->
+	First name:<br/>
+	<input type="text" id="firstname" name="firstname" value="Mickey"/>
+	<br/>
+	Last name:<br/>
+	<input type="text" id="lastname" name="lastname" value="Mouse"/>
+	<br/>
+	<input type="button" onclick="sayHello()" value="Say Hello" />
+
+	<br/><br/>
+	<!-- Lesson 6: Control Structures (branches and loops)  -->
+	Input a number of times to loop:<br/>
+	<input type="text" id="loopNum" name="loopNum" value=""/>
+	<br/>
+	<input type="button" onclick='loopByInput()' value="Loop this #" />
+	<div id="output"></div>
+	
+	<br/>
+	<!-- Lesson 7 is to update the style attribute --> 
+	<input type="button" onclick='changeText()' value="Color Text" />
+  <input type="button" id="hide" onclick='hideOutput()' value="Hide Output" />
+  
+  <!-- Lesson 8 is adding elements to the DOM -->
+  <div onclick='addImage()' style="background-color:blue; width:50px; height:50px;"></div>
+  
+  <br/>
+ 
+  </body>
+</html>
